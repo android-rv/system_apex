@@ -59,6 +59,11 @@ apex_key {
 // soong.
 apex_test {
   name: "com.android.support.apexer",
+  arch: {
+      riscv64: {
+          enabled: false,
+      },
+  },
   payload_type: "zip",
   host_supported: true,
   device_supported: false,
